@@ -1,10 +1,11 @@
 (() => {
   const palette = ["#087f8c", "#a46b19", "#8c4a73", "#355ca8", "#417b69"];
-  Promise.all([
-    fetch("assets/preview.json").then((r) => r.json()),
-    fetch("assets/illinois.topojson").then((r) => r.json()),
-  ])
-    .then(([data, topology]) => {
+  fetch("assets/preview.json")
+    .then((response) => {
+      if (!response.ok) throw new Error("Preview data could not be loaded.");
+      return response.json();
+    })
+    .then((data) => {
       function draw() {
         const b = d3.select("#borrowing-preview"),
           w = b.node().clientWidth,
@@ -62,35 +63,6 @@
           .attr("font-size", 10)
           .attr("fill", "#183040")
           .text((d) => d.label);
-        const m = d3.select("#community-preview"),
-          mw = m.node().clientWidth,
-          mh = m.node().clientHeight;
-        m.attr("viewBox", `0 0 ${mw} ${mh}`).selectAll("*").remove();
-        const geo = topojson.feature(topology, topology.objects.counties);
-        const projection = d3.geoMercator().fitExtent(
-          [
-            [12, 12],
-            [mw - 12, mh - 12],
-          ],
-          geo,
-        );
-        const lookup = new Map(data.counties.map((c) => [c.fips, c]));
-        m.selectAll("path")
-          .data(geo.features)
-          .join("path")
-          .attr("d", d3.geoPath(projection))
-          .attr("fill", (f) => {
-            const c = lookup.get(String(f.id).padStart(5, "0"));
-            return c.poverty_pct >= 15
-              ? c.providers_per10k < 10
-                ? "#8c4a73"
-                : "#d6b47e"
-              : c.providers_per10k < 10
-                ? "#79bcc4"
-                : "#d4e0e8";
-          })
-          .attr("stroke", "#f3f6f8")
-          .attr("stroke-width", 0.6);
         const c = d3.select("#careers-preview"),
           cw = c.node().clientWidth,
           ch = c.node().clientHeight;
