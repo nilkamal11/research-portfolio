@@ -1,0 +1,15 @@
+node_modules/
+.venv/
+__pycache__/
+.env
+.env.*
+private/
+private_notes/
+*.log
+*.zip
+analysis/raw/
+analysis/source_cache/
+analysis/browserdata/
+analysis/*.csv
+analysis/*.json
+analysis/*.topojson
