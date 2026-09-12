@@ -176,6 +176,10 @@ h3 {
 .study-body p:not(.eyebrow) {
   color: var(--muted);
 }
+.study-note {
+  font-size: 14px;
+  line-height: 1.5;
+}
 .study-links {
   display: flex;
   justify-content: space-between;
@@ -185,7 +189,8 @@ h3 {
   font-size: 14px;
   font-weight: 700;
 }
-.publication-section {
+.publication-section,
+.about-section {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 65px;
@@ -194,8 +199,19 @@ h3 {
   margin-top: 24px;
   padding-bottom: 30px;
 }
-.publication-section p {
+.publication-section p,
+.about-section p {
   color: var(--muted);
+}
+.about-section {
+  margin-top: 0;
+  padding-bottom: 42px;
+}
+.about-section .updated {
+  font-size: 12px;
+}
+.next-step {
+  font-size: 14px;
 }
 .text-link {
   font-size: 14px;
@@ -636,7 +652,8 @@ summary {
   .intro {
     padding-top: 32px;
   }
-  .publication-section {
+  .publication-section,
+  .about-section {
     grid-template-columns: 1fr;
     gap: 10px;
   }

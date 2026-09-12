@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta
       name="description"
-      content="Research and data visualization by Nilkamal Shah. Studies of doctoral borrowing and doctorate careers."
+      content="Nilkamal Shah studies doctoral borrowing and careers, drawing on his work with university researchers and K–12 education data."
     />
-    <title>Nilkamal Shah | Research and data visualization</title>
+    <title>Nilkamal Shah — data analyst</title>
     <link rel="stylesheet" href="assets/site.css" />
   </head>
   <body>
@@ -17,14 +17,14 @@
     </header>
     <main id="main">
       <section class="intro wrap">
-        <h1>Doctoral education and careers.</h1>
+        <h1>Doctoral education and careers</h1>
       </section>
       <section id="studies" class="wrap studies" aria-label="Research studies">
         <article class="study-card">
           <a
             class="study-preview"
             href="https://nilkamal11.github.io/doctoral-borrowing/"
-            aria-label="Explore doctoral borrowing"
+            aria-label="See the debt figures"
             ><svg
               id="borrowing-preview"
               role="img"
@@ -39,12 +39,18 @@
               >
             </h2>
             <p>
-              How graduate debt and primary sources of financial support differ
-              across fields and student groups.
+              In 2024, 24.5% of psychology doctorate recipients who answered the
+              graduate-debt question owed more than $70,000. In engineering, it
+              was 2.2%. I also compare funding by field and graduate debt across
+              racial and ethnic groups.
+            </p>
+            <p class="study-note">
+              I left median debt out. The table footnote and technical notes
+              disagree on whether the calculation includes people with no debt.
             </p>
             <div class="study-links">
               <a href="https://nilkamal11.github.io/doctoral-borrowing/"
-                >Explore study <span aria-hidden="true">↗</span></a
+                >See the debt figures</a
               ><a href="https://github.com/nilkamal11/doctoral-borrowing"
                 >Code</a
               >
@@ -55,7 +61,7 @@
           <a
             class="study-preview"
             href="https://nilkamal11.github.io/doctorate-careers/"
-            aria-label="Explore doctorate careers"
+            aria-label="Open the careers explorer"
             ><svg
               id="careers-preview"
               role="img"
@@ -63,19 +69,24 @@
             ></svg
           ></a>
           <div class="study-body">
-            <p class="eyebrow">Research workforce · SDR 2023</p>
+            <p class="eyebrow">2023 Survey of Doctorate Recipients</p>
             <h2>
               <a href="https://nilkamal11.github.io/doctorate-careers/"
                 >Doctorate careers</a
               >
             </h2>
             <p>
-              The connections between doctoral fields, employment sectors and
-              primary work activities.
+              Private for-profit employers accounted for an estimated 61.1% of
+              employed engineering doctorate holders living in the U.S. in 2023.
+            </p>
+            <p class="study-note">
+              The public file’s hours categories don’t let me reproduce the
+              published full-time salary population. I kept those salary
+              estimates separate from the career flows.
             </p>
             <div class="study-links">
               <a href="https://nilkamal11.github.io/doctorate-careers/"
-                >Explore study <span aria-hidden="true">↗</span></a
+                >Open the careers explorer</a
               ><a href="https://github.com/nilkamal11/doctorate-careers"
                 >Code</a
               >
@@ -96,19 +107,44 @@
           </h3>
           <p><em>Educational Researcher</em>, 2019, 48(8), 558–563.</p>
           <p>
-            For this coauthored study, I prepared data from five National
-            Postsecondary Student Aid Study survey years, reconciled changing
-            variables and categories, and prepared analyses and presentations
-            for the research team.
+            I was the data person on this research team and a coauthor of the
+            paper. I built the analysis datasets from five waves of the
+            National Postsecondary Student Aid Study (NPSAS), then brought the
+            results back to the team for discussion.
           </p>
           <p>
-            The doctoral borrowing study examines a different population and
-            dataset. Both projects concern who borrows and how definitions
-            affect comparisons.
+            Race categories and other variables changed between rounds, so
+            comparing borrowing over time meant working out which definitions
+            lined up and recoding the data consistently. The doctoral borrowing
+            project brought me back to that kind of work: checking who a table
+            actually counts before comparing the numbers.
           </p>
           <a class="text-link" href="https://doi.org/10.3102/0013189X19864969"
             >Read the publication <span aria-hidden="true">↗</span></a
           >
+        </div>
+      </section>
+      <section class="wrap about-section" aria-labelledby="about-heading">
+        <div>
+          <h2 id="about-heading">About me</h2>
+          <p class="updated">
+            Last updated <time datetime="2026-09">September 2026</time>
+          </p>
+        </div>
+        <div>
+          <p>
+            I work with university research teams at Academic Analytics; before
+            that, I worked with K–12 data at District 214. I joined the NPSAS
+            research team out of an interest in financial aid, without pay or
+            degree credit, and kept coming back for the weekly research
+            discussions.
+          </p>
+          <p class="next-step">
+            Next, I’d work on survey-design uncertainty estimates for the career
+            comparisons. The current flows show weighted estimates, but I’d want
+            to know how much sampling uncertainty surrounds a difference before
+            making a claim about it.
+          </p>
         </div>
       </section>
     </main>
