@@ -189,6 +189,16 @@ h3 {
   font-size: 14px;
   font-weight: 700;
 }
+.provenance-section {
+  padding-top: 8px;
+  padding-bottom: 10px;
+}
+.provenance-section p {
+  max-width: 980px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: var(--muted);
+}
 .publication-section,
 .about-section {
   display: grid;

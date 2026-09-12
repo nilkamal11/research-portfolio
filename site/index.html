@@ -45,8 +45,10 @@
               racial and ethnic groups.
             </p>
             <p class="study-note">
-              I left median debt out. The table footnote and technical notes
-              disagree on whether the calculation includes people with no debt.
+              I reconciled three NCSES tables in Python and built the D3 views;
+              conflicting definitions meant leaving median debt out. With
+              approved restricted-use SED access, I’d examine adjusted
+              differences in debt within fields.
             </p>
             <div class="study-links">
               <a href="https://nilkamal11.github.io/doctoral-borrowing/"
@@ -65,7 +67,7 @@
             ><svg
               id="careers-preview"
               role="img"
-              aria-label="Preview of doctoral fields and employment sectors"
+              aria-label="2023 employment snapshot by doctoral field and employer sector"
             ></svg
           ></a>
           <div class="study-body">
@@ -80,9 +82,11 @@
               employed engineering doctorate holders living in the U.S. in 2023.
             </p>
             <p class="study-note">
-              The public file’s hours categories don’t let me reproduce the
-              published full-time salary population. I kept those salary
-              estimates separate from the career flows.
+              My work here was the weighted tables and D3 views, including
+              keeping salaries separate when their full-time population could
+              not be reproduced from the public file. A next project would use
+              approved longitudinal SDR access to track sector changes for the
+              same people across survey waves.
             </p>
             <div class="study-links">
               <a href="https://nilkamal11.github.io/doctorate-careers/"
@@ -93,6 +97,13 @@
             </div>
           </div>
         </article>
+      </section>
+      <section class="wrap provenance-section" aria-label="Source checks">
+        <p>
+          Borrowing findings trace to named cells in NCSES workbooks. Career
+          findings are reproduced from weighted survey records or the published
+          salary table. Source checks must pass before either study is published.
+        </p>
       </section>
       <section class="wrap publication-section" id="publications">
         <div>
@@ -137,7 +148,9 @@
             that, I worked with K–12 data at District 214. I joined the NPSAS
             research team out of an interest in financial aid, without pay or
             degree credit, and kept coming back for the weekly research
-            discussions.
+            discussions. At District 214, our team also obtained NCES
+            restricted-use approval for a proposed study using the
+            High School Longitudinal Study of 2009 (HSLS:09).
           </p>
           <p class="next-step">
             Next, I’d work on survey-design uncertainty estimates for the career
