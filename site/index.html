@@ -17,7 +17,17 @@
     </header>
     <main id="main">
       <section class="intro wrap">
-        <h1>Doctoral education and careers</h1>
+        <h1>24.5% of psychology research doctorate recipients reported graduate debt above $70,000.</h1>
+        <p class="finding-context">
+          In engineering, the share was 2.2%. Both figures describe 2024
+          recipients who answered the graduate-debt question.
+        </p>
+        <p>
+          I build research datasets and visualizations for people working in
+          education. I treat deciding what to leave out as part of the analysis:
+          in these studies, that meant rejecting a funding-to-debt link the
+          published tables could not support.
+        </p>
       </section>
       <section id="studies" class="wrap studies" aria-label="Research studies">
         <article class="study-card">
@@ -39,16 +49,13 @@
               >
             </h2>
             <p>
-              In 2024, 24.5% of psychology doctorate recipients who answered the
-              graduate-debt question owed more than $70,000. In engineering, it
-              was 2.2%. I also compare funding by field and graduate debt across
-              racial and ethnic groups.
+              Nearly half of education doctorate recipients named their own
+              resources as their main financial support. The study compares
+              funding by field and graduate debt across racial and ethnic groups.
             </p>
             <p class="study-note">
-              I reconciled three NCSES tables in Python and built the D3 views;
-              conflicting definitions meant leaving median debt out. With
-              approved restricted-use SED access, I’d examine adjusted
-              differences in debt within fields.
+              I reconciled three NCSES tables and their response denominators
+              in Python, then built the D3 views from the checked results.
             </p>
             <div class="study-links">
               <a href="https://nilkamal11.github.io/doctoral-borrowing/"
@@ -78,15 +85,14 @@
               >
             </h2>
             <p>
-              Private for-profit employers accounted for an estimated 61.1% of
-              employed engineering doctorate holders living in the U.S. in 2023.
+              Private for-profit employers accounted for 61.1% of working
+              engineering doctorate holders in the U.S. in 2023; educational
+              institutions employed 63.3% of those in the social sciences.
             </p>
             <p class="study-note">
-              My work here was the weighted tables and D3 views, including
-              keeping salaries separate when their full-time population could
-              not be reproduced from the public file. A next project would use
-              approved longitudinal SDR access to track sector changes for the
-              same people across survey waves.
+              I built the weighted three-way cross-tab behind these views,
+              preserving the field, employer and activity recorded for each
+              respondent.
             </p>
             <div class="study-links">
               <a href="https://nilkamal11.github.io/doctorate-careers/"
@@ -151,12 +157,6 @@
             discussions. At District 214, our team also obtained NCES
             restricted-use approval for a proposed study using the
             High School Longitudinal Study of 2009 (HSLS:09).
-          </p>
-          <p class="next-step">
-            Next, I’d work on survey-design uncertainty estimates for the career
-            comparisons. The current flows show weighted estimates, but I’d want
-            to know how much sampling uncertainty surrounds a difference before
-            making a claim about it.
           </p>
         </div>
       </section>
