@@ -1,143 +1,41 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta
-      name="description"
-      content="Nilkamal Shah studies doctoral borrowing and careers, drawing on his work with university researchers and K–12 education data."
-    />
-    <title>Nilkamal Shah — data analyst</title>
-    <link rel="stylesheet" href="assets/site.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <a class="brand" href="./">Nilkamal Shah</a>
-    </header>
-    <main id="main">
-      <section class="intro wrap">
-        <h1>Doctoral education and careers</h1>
-      </section>
-      <section id="studies" class="wrap studies" aria-label="Research studies">
-        <article class="study-card">
-          <a
-            class="study-preview"
-            href="https://nilkamal11.github.io/doctoral-borrowing/"
-            aria-label="See the debt figures"
-            ><svg
-              id="borrowing-preview"
-              role="img"
-              aria-label="Preview of doctoral fields and graduate debt distributions"
-            ></svg
-          ></a>
-          <div class="study-body">
-            <p class="eyebrow">Education finance · SED 2024</p>
-            <h2>
-              <a href="https://nilkamal11.github.io/doctoral-borrowing/"
-                >Doctoral borrowing</a
-              >
-            </h2>
-            <p>
-              Nearly half of education doctorate recipients named their own
-              resources as their main financial support. The study compares
-              funding by field and graduate debt across racial and ethnic groups.
-            </p>
-            <p class="study-note">
-              I reconciled three NCSES tables and their response denominators
-              in Python, then built the D3 views from the checked results.
-            </p>
-            <div class="study-links">
-              <a href="https://nilkamal11.github.io/doctoral-borrowing/"
-                >See the debt figures</a
-              ><a href="https://github.com/nilkamal11/doctoral-borrowing"
-                >Code</a
-              >
-            </div>
-          </div>
-        </article>
-        <article class="study-card">
-          <a
-            class="study-preview"
-            href="https://nilkamal11.github.io/doctorate-careers/"
-            aria-label="Open the careers explorer"
-            ><svg
-              id="careers-preview"
-              role="img"
-              aria-label="2023 employment snapshot by doctoral field and employer sector"
-            ></svg
-          ></a>
-          <div class="study-body">
-            <p class="eyebrow">2023 Survey of Doctorate Recipients</p>
-            <h2>
-              <a href="https://nilkamal11.github.io/doctorate-careers/"
-                >Doctorate careers</a
-              >
-            </h2>
-            <p>
-              Private for-profit employers accounted for 61.1% of working
-              engineering doctorate holders in the U.S. in 2023; educational
-              institutions employed 63.3% of those in the social sciences.
-            </p>
-            <p class="study-note">
-              I built the weighted three-way cross-tab behind these views,
-              preserving the field, employer and activity recorded for each
-              respondent.
-            </p>
-            <div class="study-links">
-              <a href="https://nilkamal11.github.io/doctorate-careers/"
-                >Open the careers explorer</a
-              ><a href="https://github.com/nilkamal11/doctorate-careers"
-                >Code</a
-              >
-            </div>
-          </div>
-        </article>
-      </section>
-      <section class="wrap provenance-section" aria-label="Source checks">
-        <p>
-          Borrowing findings trace to named cells in NCSES workbooks. Career
-          findings are reproduced from weighted survey records or the published
-          salary table. Source checks must pass before either study is published.
-        </p>
-      </section>
-      <section class="wrap publication-section" id="publications">
-        <div>
-          <p class="eyebrow">Related research</p>
-          <h2>Student borrowing over time</h2>
-        </div>
-        <div>
-          <h3>
-            <a href="https://doi.org/10.3102/0013189X19864969"
-              >Indebted Over Time: Racial Differences in Student Borrowing</a
-            >
-          </h3>
-          <p><em>Educational Researcher</em>, 2019, 48(8), 558–563.</p>
-          <p>
-            I was the data person on this research team and a coauthor of the
-            paper. I built the analysis datasets from five waves of the
-            National Postsecondary Student Aid Study (NPSAS), then brought the
-            results back to the team for discussion.
-          </p>
-          <p>
-            Race categories and other variables changed between rounds, so
-            comparing borrowing over time meant working out which definitions
-            lined up and recoding the data consistently. The doctoral borrowing
-            project brought me back to that kind of work: checking who a table
-            actually counts before comparing the numbers.
-          </p>
-          <a class="text-link" href="https://doi.org/10.3102/0013189X19864969"
-            >Read the publication <span aria-hidden="true">↗</span></a
-          >
-        </div>
-      </section>
-    </main>
-    <footer class="site-footer wrap">
-      <p>Privacy: this site records the visitor’s IP address, page, browser details, and visit time for security and basic audience measurement. Records are removed after 30 days.</p>
-    </footer>
-    <script src="assets/vendor/d3.min.js"></script>
-    <script src="assets/vendor/d3-sankey.min.js"></script>
-    <script src="assets/home.js"></script>
-    <script src="assets/visitor-log.js"></script>
-  </body>
-</html>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Nilkamal Shah's education data portfolio: K–12 school finance and achievement, higher education data libraries, doctoral borrowing and careers, and published student-finance research.">
+  <title>Nilkamal Shah | Education data and research</title>
+  <link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/portfolio.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><a class="brand" href="./">Nilkamal Shah</a><nav aria-label="Portfolio sections"><a href="#k12">K–12</a><a href="#higher-ed">Higher education</a><a href="#publications">Publications</a><a href="#approach">About the work</a></nav></header>
+<main id="main">
+  <section class="intro wrap"><p class="eyebrow">Education data portfolio</p><h1>Education data and research</h1><p class="finding-context">I work with school-district and higher-education data, from preparing research datasets to building reports people can use. These projects bring together source discovery, financial and achievement data, and published research on student borrowing.</p><div class="portfolio-paths"><a href="#k12">Explore K–12 projects</a><a href="#higher-ed">Explore higher education projects</a><a href="#publications">Read the publications</a></div></section>
+
+  <section id="k12" class="wrap portfolio-section" aria-labelledby="k12-heading">
+    <div class="section-intro"><p class="eyebrow">K–12</p><h2 id="k12-heading">School finance, achievement and public data</h2><p>Start with a district question, inspect the sources and keep the limits of the comparison visible.</p></div>
+    <article class="finance-feature"><div><p class="eyebrow">Featured project · Census F-33 and SEDA</p><h3><a href="https://nilkamal11.github.io/district-learning-context-explorer/finance.html">North Palos district finance</a></h3><p>Explore FY2022–2024 spending for North Palos 117 and three nearby elementary districts. The view separates current spending from capital outlay and shows district-wide spending alongside fourth-grade SEDA estimates.</p><p class="study-note">I joined year-specific district identities, converted source dollar units and built 96 validation checks. The checks exposed missing records in an official CSV and differences between gross and published per-pupil measures. Those issues are documented, not hidden.</p><div class="study-links"><a href="https://nilkamal11.github.io/district-learning-context-explorer/finance.html">Open the finance view</a><a href="https://github.com/nilkamal11/district-learning-context-explorer/blob/main/docs/finance_extension.md">Methods and validation</a></div></div><div class="finance-example"><p class="eyebrow">North Palos 117 · FY2024</p><dl><div><dt>Current spending</dt><dd>$62.6 million</dd></div><div><dt>Census membership</dt><dd>3,325</dd></div><div><dt>Capital outlay</dt><dd>$21.3 million</dd></div></dl><p>Nominal district-wide dollars. Not fourth-grade spending or an estimate of the effect of spending on achievement.</p><a href="https://nilkamal11.github.io/district-learning-context-explorer/finance.html#quality">See the source checks</a></div></article>
+    <div class="portfolio-grid">
+      <article class="resource-card"><p class="eyebrow">Data library</p><h3><a href="https://nilkamal11.github.io/k12-data-library/">K–12 Data Library</a></h3><p>A searchable guide to 66 sources across 20 families, covering school and district records, finance, geography, assessments and research datasets.</p><p class="study-note">Source profiles explain access, reporting level, identifiers, suppression and comparability. Documentation review and bounded sample inspection are distinguished. Catalog review date: September 13, 2026.</p><a class="text-link" href="https://nilkamal11.github.io/k12-data-library/">Find a K–12 dataset</a></article>
+      <article class="resource-card"><p class="eyebrow">Achievement and data preparation</p><h3>District Learning Context Explorer</h3><p>The SEDA workbench examines grade-specific district achievement, uncertainty and missing years. A separate Illinois view focuses on fourth-grade results for North Palos and nearby schools.</p><p class="study-note">The Illinois pipeline preserves suppression and warns about the 2025 proficiency-definition break. Its school-level results are kept separate from SEDA district estimates.</p><div class="study-links"><a href="https://nilkamal11.github.io/district-learning-context-explorer/">Explore SEDA district trends</a><a href="https://nilkamal11.github.io/district-learning-context-explorer/illinois.html">Open Illinois Grade 4</a></div></article>
+    </div>
+  </section>
+
+  <section id="higher-ed" class="wrap portfolio-section" aria-labelledby="higher-ed-heading">
+    <div class="section-intro"><p class="eyebrow">Higher education</p><h2 id="higher-ed-heading">Data sources, student finance and doctorate careers</h2><p>Find a source, then explore examples of preparing and communicating research data.</p></div>
+    <article class="library-feature"><div><p class="eyebrow">Data library</p><h3><a href="https://nilkamal11.github.io/higher-ed-data-library/">Higher Ed Data Library</a></h3><p>A reference to 90 datasets in 20 source groups, with permanent dataset pages, access instructions, identifiers, reporting grain, comparability limits and verification evidence.</p><p class="study-note">I built stable dataset IDs, JSON and CSV exports, schema checks, retained snapshots and change reports. Automated link/build checks do not substitute for a fresh substantive review. Documentation review date: September 13, 2026.</p></div><div class="library-links"><a href="https://nilkamal11.github.io/higher-ed-data-library/">Browse higher-ed sources</a><a href="https://nilkamal11.github.io/higher-ed-data-library/exports/catalog.json">Download catalog JSON</a><a href="https://github.com/nilkamal11/higher-ed-data-library">Code and maintenance</a></div></article>
+    <div id="studies" class="studies" aria-label="Higher education research studies">
+      <article class="study-card"><a class="study-preview" href="https://nilkamal11.github.io/doctoral-borrowing/" aria-label="Explore doctoral borrowing"><svg id="borrowing-preview" role="img" aria-label="Doctoral fields and graduate debt distributions"></svg></a><div class="study-body"><p class="eyebrow">Education finance · SED 2024</p><h3><a href="https://nilkamal11.github.io/doctoral-borrowing/">Doctoral borrowing</a></h3><p>Compare doctoral debt and financial support across fields and racial and ethnic groups. I reconciled three NCSES tables and their response denominators in Python before building the D3 views.</p><p class="study-note">Published aggregates do not link each person's funding source to their debt. The views preserve that limitation and unavailable values.</p><div class="study-links"><a href="https://nilkamal11.github.io/doctoral-borrowing/">Explore borrowing</a><a href="https://github.com/nilkamal11/doctoral-borrowing">Code</a></div></div></article>
+      <article class="study-card"><a class="study-preview" href="https://nilkamal11.github.io/doctorate-careers/" aria-label="Explore doctorate careers"><svg id="careers-preview" role="img" aria-label="Doctoral fields, employment sectors and work activities"></svg></a><div class="study-body"><p class="eyebrow">2023 Survey of Doctorate Recipients</p><h3><a href="https://nilkamal11.github.io/doctorate-careers/">Doctorate careers</a></h3><p>Explore doctoral fields, employment sectors and primary work activities. I built the survey-weighted cross-tab from public-use records and kept the separate published salary comparison tied to its own population.</p><p class="study-note">This is a workforce snapshot, not a history of individual career moves or a forecast of graduate outcomes.</p><div class="study-links"><a href="https://nilkamal11.github.io/doctorate-careers/">Explore careers</a><a href="https://github.com/nilkamal11/doctorate-careers">Code</a></div></div></article>
+    </div>
+  </section>
+
+  <section id="publications" class="wrap portfolio-section" aria-labelledby="publications-heading">
+    <div class="section-intro"><p class="eyebrow">Publications</p><h2 id="publications-heading">Research on student borrowing</h2><p>I am a coauthor of both papers. My contribution included preparing analysis datasets, harmonizing changing survey variables and discussing results with the research team.</p></div>
+    <div class="portfolio-grid"><article class="resource-card"><p class="eyebrow">Educational Researcher · 2019</p><h3><a href="https://doi.org/10.3102/0013189X19864969">Indebted Over Time: Racial Differences in Student Borrowing</a></h3><p>Examines changes in federal student borrowing across racial and ethnic groups using five NPSAS administrations from 2000 through 2016.</p><p class="study-note">Volume 48, issue 8, pages 558–563. DOI: 10.3102/0013189X19864969.</p><a class="text-link" href="https://doi.org/10.3102/0013189X19864969">Read the publisher record</a></article><article class="resource-card"><p class="eyebrow">AIR Professional File · 2020</p><h3><a href="https://www.airweb.org/publication/article-148">National Trends in Federal Student Loan Borrowing by Income Group and First-Generation Status</a></h3><p>Examines federal borrowing patterns by family income and parental education using nationally representative NPSAS data.</p><p class="study-note">Spring 2020, article 148. DOI: 10.34315/apf1482020.</p><a class="text-link" href="https://www.airweb.org/publication/article-148">Read the publication</a></article></div>
+  </section>
+  <section id="approach" class="wrap about-section"><div><p class="eyebrow">About the work</p><h2>Make the data usable without losing its meaning</h2></div><div><p>My professional experience spans higher-education research analytics, university data integration and K–12 research and reporting. It includes Python and SQL pipelines, Tableau and Power BI dashboards, financial-aid reporting and department budget-tracking tools.</p><p>These independent portfolio projects make that approach visible: identify the population and reporting level, preserve original sources, check joins and totals, and explain what the results do and do not support.</p><p class="updated">Portfolio organized October 24, 2026. Individual sources retain their own release and review dates.</p></div></section>
+</main>
+<footer class="site-footer wrap"><p>Nilkamal Shah · Independent education data projects</p><p>Privacy: this site records the visitor’s IP address, page, browser details, and visit time for security and basic audience measurement. Records are removed after 30 days.</p></footer>
+<script src="assets/vendor/d3.min.js"></script><script src="assets/vendor/d3-sankey.min.js"></script><script src="assets/home.js"></script><script src="assets/visitor-log.js"></script>
+</body></html>
