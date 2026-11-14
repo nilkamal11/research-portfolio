@@ -1,0 +1,17 @@
+{
+  "id": "short-unique-project-slug",
+  "title": "Project name",
+  "categories": ["K–12 analytics"],
+  "maturity": "Prototype",
+  "featured": false,
+  "audience": "Who can use this work",
+  "summary": "One or two sentences describing the useful work, using verified claims.",
+  "question": "What question does this project help someone answer?",
+  "contribution": "What you built or analyzed, and the important decisions you made.",
+  "approach": "Sources, release/period, population, methods, and checks.",
+  "result": "What it delivers, or a verified finding with the correct population and denominator.",
+  "limits": "What remains incomplete or affects interpretation, freshness, or reuse.",
+  "skills": ["Python", "SQL"],
+  "links": [{"label": "Open project", "url": "https://example.com/replace-me", "kind": "demo"}],
+  "evidence": ["https://example.com/replace-me"]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-10-10",
+  "sourceGuideNote": "The K–12 and higher-ed catalogs describe sources; they are not live data feeds. Their documentation review date is September 13, 2026; source releases and sample-inspection coverage are detailed in each project.",
+  "profile": {
+    "name": "Nilkamal Shah",
+    "role": "Education data analyst & research collaborator",
+    "intro": "I turn education data into questions people can explore, evidence they can check, and resources they can reuse.",
+    "about": "My work connects research, data preparation, and interactive reporting across K–12 and higher education. I use Python, SQL, and visual interfaces to make the source, population, and limits of an analysis easier to understand.",
+    "email": "nilkamals@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/nilkamalshah"
+  },
+  "categories": ["Research studies", "K–12 analytics", "Higher-ed analytics", "Data resources", "Tools & prototypes"],
+  "publications": [
+    {
+      "title": "Indebted Over Time: Racial Differences in Student Borrowing",
+      "url": "https://doi.org/10.3102/0013189X19864969",
+      "citation": "Educational Researcher, 2019, 48(8), 558–563.",
+      "summary": "Examines changes in federal student borrowing across racial and ethnic groups using five NPSAS administrations from 2000 through 2016.",
+      "contribution": "I was the data person on this research team and a coauthor of the paper. I built analysis datasets from five waves of the National Postsecondary Student Aid Study, reconciling changing race categories and other definitions before discussing results with the team."
+    },
+    {
+      "title": "National Trends in Federal Student Loan Borrowing by Income Group and First-Generation Status",
+      "url": "https://www.airweb.org/publication/article-148",
+      "citation": "AIR Professional File, Spring 2020, article 148. DOI: 10.34315/apf1482020.",
+      "summary": "Examines federal borrowing patterns by family income and parental education using nationally representative NPSAS data.",
+      "contribution": "I am a coauthor. My contribution included preparing analysis datasets, harmonizing changing survey variables, and discussing results with the research team."
+    }
+  ],
+  "projects": [
+    {
+      "id": "district-learning-context",
+      "reviewed": "2026-11-14",
+      "title": "District Learning Context Explorer",
+      "categories": ["K–12 analytics"],
+      "maturity": "Published explorer · extension in progress",
+      "featured": true,
+      "audience": "District analysts, education researchers, and families",
+      "summary": "Explore district achievement and public finance in context. Companion views cover North Palos-area district spending and Illinois school-level Grade 4 results.",
+      "question": "How do a district’s estimates compare with districts serving similar communities, and how has the pattern changed over time?",
+      "contribution": "Built a Python, SQL, and DuckDB pipeline to reshape source releases, audit identifiers, and prepare browser-ready comparisons. The finance extension reconciles year-specific district identities and source dollar units. Views retain missing years and uncertainty instead of implying a continuous trend.",
+      "approach": "SEDA 2025.2 administrative-district estimates are shown within a selected grade and subject. Peer selection uses public community context rather than test scores. The Illinois companion uses public Report Card workbooks for 2022–2025 and separates suppression from unavailable measures. The Census F-33 finance view covers FY2022–2024 district-wide spending, keeping current spending separate from capital outlay and documenting source reconciliation issues.",
+      "result": "A published SEDA district explorer, a North Palos-area finance view, and a companion Grade 4 school dashboard for North Palos 117, Indian Springs 109, Palos 118, and Worth 127. The broader Illinois rebuild remains in progress.",
+      "limits": "These are descriptive comparisons, not individual-student growth or causal effects. District-wide spending is not fourth-grade spending or an estimate of the effect of spending on achievement. Alternative peer weights have not yet been sensitivity-tested. Illinois changed proficiency thresholds in 2025, so those proficiency rates should not be directly compared with earlier years. Grade 4-only SGP is not available at the same grain in the 2022–2024 files.",
+      "skills": ["Python", "SQL", "DuckDB", "Identifier audits", "Uncertainty"],
+      "links": [
+        {"label": "Open district explorer", "url": "https://nilkamal11.github.io/district-learning-context-explorer/", "kind": "demo"},
+        {"label": "North Palos district finance", "url": "https://nilkamal11.github.io/district-learning-context-explorer/finance.html", "kind": "demo"},
+        {"label": "Finance methods & validation", "url": "https://github.com/nilkamal11/district-learning-context-explorer/blob/main/docs/finance_extension.md", "kind": "source"},
+        {"label": "Illinois Grade 4 companion", "url": "https://nilkamal11.github.io/district-learning-context-explorer/illinois.html", "kind": "demo"},
+        {"label": "Code & methodology", "url": "https://github.com/nilkamal11/district-learning-context-explorer", "kind": "code"}
+      ],
+      "evidence": ["https://github.com/nilkamal11/district-learning-context-explorer", "https://nilkamal11.github.io/district-learning-context-explorer/illinois.html", "https://github.com/nilkamal11/district-learning-context-explorer/blob/main/docs/finance_extension.md"]
+    },
+    {
+      "id": "doctoral-borrowing",
+      "title": "Doctoral borrowing",
+      "categories": ["Research studies", "Higher-ed analytics"],
+      "maturity": "Published study",
+      "featured": true,
+      "audience": "Education finance researchers and graduate education leaders",
+      "summary": "Compare doctoral funding by field and graduate debt across racial and ethnic groups, using checked NCSES tables and interactive D3 views.",
+      "question": "Who borrows to complete a research doctorate, and how do funding and debt patterns differ across fields and groups?",
+      "contribution": "Wrote Python extraction and source checks across three NCSES workbooks, reconciling debt bands, response denominators, and suppressed cells before building the D3 views.",
+      "approach": "Uses published tables from the 2024 Survey of Earned Doctorates, an annual census of research doctorate recipients. Each finding traces to workbook cells and its relevant response denominator. Funding and debt remain separate measures.",
+      "result": "46.7% of education doctorate recipients named their own resources as their primary support. Graduate debt above $70,000 was reported by 24.5% of psychology recipients and 2.2% of engineering recipients; those debt denominators include recipients with no graduate debt.",
+      "limits": "Descriptive aggregate tables cannot connect an individual’s funding to debt or establish causes. Group comparisons are unadjusted. Missing and suppressed cells remain unavailable; professional practice doctorates are outside the study population.",
+      "skills": ["Python", "D3", "Source reconciliation", "Denominator checks"],
+      "links": [
+        {"label": "Explore the study", "url": "https://nilkamal11.github.io/doctoral-borrowing/", "kind": "demo"},
+        {"label": "Study brief · PDF", "url": "https://nilkamal11.github.io/doctoral-borrowing/brief.pdf", "kind": "download"},
+        {"label": "Graduate debt · CSV", "url": "https://nilkamal11.github.io/doctoral-borrowing/data/debt_bins.csv", "kind": "download"},
+        {"label": "Funding · CSV", "url": "https://nilkamal11.github.io/doctoral-borrowing/data/funding.csv", "kind": "download"},
+        {"label": "Group comparisons · CSV", "url": "https://nilkamal11.github.io/doctoral-borrowing/data/equity.csv", "kind": "download"},
+        {"label": "Study data · JSON", "url": "https://nilkamal11.github.io/doctoral-borrowing/data/data.json", "kind": "download"},
+        {"label": "Findings & source references", "url": "https://nilkamal11.github.io/doctoral-borrowing/data/findings.json", "kind": "source"},
+        {"label": "Code & methods", "url": "https://github.com/nilkamal11/doctoral-borrowing", "kind": "code"}
+      ],
+      "evidence": ["https://nilkamal11.github.io/doctoral-borrowing/", "https://nilkamal11.github.io/doctoral-borrowing/data/findings.json"]
+    },
+    {
+      "id": "doctorate-careers",
+      "title": "Doctorate careers",
+      "categories": ["Research studies", "Higher-ed analytics"],
+      "maturity": "Published study",
+      "featured": true,
+      "audience": "Graduate education leaders, career researchers, and prospective students",
+      "summary": "Explore where doctorate holders work and what they do, preserving the relationship between field, employer sector, and primary activity.",
+      "question": "How does employment differ across doctoral fields, employer sectors, and the activities people perform?",
+      "contribution": "Built the weighted field-by-sector-by-activity tables and D3 views. Combined small activity groups while retaining respondents in denominators, and kept full-time salary estimates separate from the wider employment population.",
+      "approach": "Uses the 2023 Survey of Doctorate Recipients public-use file and final survey weights for employed U.S.-residing doctorate holders. The three-way tables describe the same respondents; a separate published salary table supplies medians and standard errors.",
+      "result": "An estimated 61.1% of employed engineering doctorate holders worked for private for-profit employers in 2023. Educational institutions employed an estimated 63.3% of employed social science doctorate holders.",
+      "limits": "A cross-sectional employment snapshot does not measure career transitions. Flow estimates have no design-based standard errors or significance tests. Salary estimates cover a different, full-time population; the differences do not estimate causal returns.",
+      "skills": ["Survey weights", "Python", "D3", "Cross-tabulation"],
+      "links": [
+        {"label": "Explore the study", "url": "https://nilkamal11.github.io/doctorate-careers/", "kind": "demo"},
+        {"label": "Study brief · PDF", "url": "https://nilkamal11.github.io/doctorate-careers/brief.pdf", "kind": "download"},
+        {"label": "Three-way employment · CSV", "url": "https://nilkamal11.github.io/doctorate-careers/data/triples.csv", "kind": "download"},
+        {"label": "Field & sector · CSV", "url": "https://nilkamal11.github.io/doctorate-careers/data/field_sector.csv", "kind": "download"},
+        {"label": "Published salaries · CSV", "url": "https://nilkamal11.github.io/doctorate-careers/data/salary.csv", "kind": "download"},
+        {"label": "Study data · JSON", "url": "https://nilkamal11.github.io/doctorate-careers/data/data.json", "kind": "download"},
+        {"label": "Findings & source references", "url": "https://nilkamal11.github.io/doctorate-careers/data/findings.json", "kind": "source"},
+        {"label": "Code & methods", "url": "https://github.com/nilkamal11/doctorate-careers", "kind": "code"}
+      ],
+      "evidence": ["https://nilkamal11.github.io/doctorate-careers/", "https://nilkamal11.github.io/doctorate-careers/data/findings.json"]
+    },
+    {
+      "id": "nwea-research-works",
+      "title": "NWEA Research Works",
+      "categories": ["K–12 analytics", "Data resources"],
+      "maturity": "Published snapshot explorer",
+      "featured": false,
+      "audience": "K–12 researchers and evidence reviewers",
+      "summary": "Search a saved research-library snapshot by topic, publication type, and contributor, then follow each record back to its source.",
+      "question": "How can a research library become easier to search and inspect without losing its source context?",
+      "contribution": "Prepared reproducible research metadata and built linked record, category, and contributor views. A companion Python + D3 version separates Python-generated data preparation from the browser interface.",
+      "approach": "Uses 317 saved NWEA library entries from September 4, 2026. Filters expose record memberships; contributor links count shared credits. GitHub Pages serves a static Python-generated export for the companion, while the Flask API runs locally.",
+      "result": "A searchable library explorer with source links, record exports, topic/type comparisons, and a contributor network.",
+      "limits": "An independent portfolio project, not an official NWEA product or live feed. Entries can be versions or summaries of the same study. Shared credits do not prove collaboration, and posted dates are not verified original publication dates.",
+      "skills": ["Python", "D3", "Metadata preparation", "Linked views"],
+      "links": [
+        {"label": "Open research explorer", "url": "https://nilkamal11.github.io/nwea-research-works/", "kind": "demo"},
+        {"label": "Python + D3 companion", "url": "https://nilkamal11.github.io/nwea-research-works/python-d3/", "kind": "demo"},
+        {"label": "Code & build guide", "url": "https://github.com/nilkamal11/nwea-research-works", "kind": "code"}
+      ],
+      "evidence": ["https://github.com/nilkamal11/nwea-research-works"]
+    },
+    {
+      "id": "institution-atlas",
+      "title": "Institution Atlas",
+      "categories": ["Higher-ed analytics", "Tools & prototypes"],
+      "maturity": "Published prototype",
+      "featured": false,
+      "audience": "Institutional research and research administration teams",
+      "summary": "A University of Delaware pilot that brings institutional and research sources together while keeping identifiers, reporting boundaries, and release vintages visible.",
+      "question": "What can public sources tell us about one institution when their reporting periods and organizational boundaries differ?",
+      "contribution": "Built structured source contracts, an identifier crosswalk, reproducible static pages, reconciliation exports, and comparisons across retained vintages.",
+      "approach": "Combines public institutional, research, award, and publication sources through reviewed identifiers. Source grain, period, release, suppression, and boundary decisions remain explicit rather than treating every source as the same unit.",
+      "result": "A public single-institution prototype with source-aware profiles, peer views, downloadable structured records, and an evidence trail.",
+      "limits": "This is a pilot, with no claim of institutional adoption. Related-organization boundary decisions remain pending. Four broader or unresolved HERD peer records are excluded from the median. Source coverage and periods differ across pages.",
+      "skills": ["Python", "Source contracts", "Entity reconciliation", "Static publishing"],
+      "links": [
+        {"label": "Open institutional atlas", "url": "https://nilkamal11.github.io/institution-atlas/", "kind": "demo"},
+        {"label": "Code, sources & exports", "url": "https://github.com/nilkamal11/institution-atlas", "kind": "code"}
+      ],
+      "evidence": ["https://github.com/nilkamal11/institution-atlas"]
+    },
+    {
+      "id": "k12-data-library",
+      "title": "K–12 Data Library",
+      "categories": ["Data resources", "K–12 analytics"],
+      "maturity": "Published source guide",
+      "featured": false,
+      "audience": "K–12 analysts and researchers choosing public data",
+      "summary": "A searchable guide to 66 public K–12 sources across 20 families, covering access, identifiers, population, missing data, and comparison notes.",
+      "question": "Which public source fits an education question, and what should an analyst check before using it?",
+      "contribution": "Organized public documentation into a consistent catalog so access rules, geography, record level, releases, and reuse terms can be compared before analysis begins.",
+      "approach": "All 66 source descriptions were checked against official documentation on September 13, 2026; small samples were checked for 12 entries. Structured catalog records drive the searchable interface.",
+      "result": "A reusable source-selection reference with official links and notes on identifiers, changes over time, and missingness.",
+      "limits": "This directory describes sources; it does not contain the underlying datasets or deliver live data. Documentation review is broader than sample-data inspection. Analysts should verify the release and terms needed for their own use.",
+      "skills": ["Data documentation", "Source research", "Catalog design"],
+      "links": [
+        {"label": "Browse K–12 sources", "url": "https://nilkamal11.github.io/k12-data-library/", "kind": "demo"},
+        {"label": "Catalog & code", "url": "https://github.com/nilkamal11/k12-data-library", "kind": "code"}
+      ],
+      "evidence": ["https://github.com/nilkamal11/k12-data-library"]
+    },
+    {
+      "id": "higher-ed-data-library",
+      "title": "Higher Ed Data Library",
+      "categories": ["Data resources", "Higher-ed analytics"],
+      "maturity": "Published source guide",
+      "featured": false,
+      "audience": "Higher education analysts and institutional researchers",
+      "summary": "A reference to 90 higher education datasets in 20 source groups, with permanent records, catalog exports, and release comparison checks.",
+      "question": "How can a dataset directory be useful to people and reusable by analytical workflows?",
+      "contribution": "Built a catalog-driven publication with stable dataset IDs, complete HTML records, JSON and CSV exports, a schema, retained snapshots, and change reports.",
+      "approach": "All 90 records were checked against official documentation on September 13, 2026; 22 also had a bounded sample inspected. A build-time renderer keeps the full directory readable without JavaScript.",
+      "result": "A searchable source guide with stable dataset pages and reusable catalog exports, supported by automated build and link checks.",
+      "limits": "A directory of datasets, not a live data feed or underlying data warehouse. Automated availability checks do not mean every variable, year, or geography has been manually reviewed. State and system coverage is illustrative.",
+      "skills": ["Structured catalogs", "JSON Schema", "Static rendering", "Change tracking"],
+      "links": [
+        {"label": "Browse higher-ed sources", "url": "https://nilkamal11.github.io/higher-ed-data-library/", "kind": "demo"},
+        {"label": "Catalog · CSV", "url": "https://nilkamal11.github.io/higher-ed-data-library/exports/catalog.csv", "kind": "download"},
+        {"label": "Catalog · JSON", "url": "https://nilkamal11.github.io/higher-ed-data-library/exports/catalog.json", "kind": "download"},
+        {"label": "Catalog schema", "url": "https://nilkamal11.github.io/higher-ed-data-library/exports/schema.json", "kind": "source"},
+        {"label": "Code & build guide", "url": "https://github.com/nilkamal11/higher-ed-data-library", "kind": "code"}
+      ],
+      "evidence": ["https://github.com/nilkamal11/higher-ed-data-library"]
+    },
+    {
+      "id": "mytradepathway",
+      "title": "MyTradePathway",
+      "categories": ["Tools & prototypes", "K–12 analytics"],
+      "maturity": "Functional synthetic demo",
+      "featured": false,
+      "audience": "Career education teams and product reviewers",
+      "summary": "A browser-only career-pathway demo with student, counselor, and administrator journeys, practice activities, and local progress.",
+      "question": "How could a student move from exploring trades to choosing a pathway and preparing for next steps?",
+      "contribution": "Built representative journeys for trade exploration, preparation, practice, counselor reporting, and sample content review, using synthetic accounts and browser-local state.",
+      "approach": "The public demo includes ten trades, twelve supplied local program records, and 135 original practice questions. Synthetic student and activity fixtures support role-based demonstrations; progress stays in the current browser.",
+      "result": "A functional product demonstration with locally generated reports and an offline public demo shell.",
+      "limits": "Roles simulate access; there is no live authentication, payment, shared state, or server API. People and activity are synthetic. Supplied wages, fees, eligibility, and deadlines are unverified, and some windows have closed. It demonstrates a product concept rather than measured student outcomes.",
+      "skills": ["Product prototyping", "Browser state", "Workflow design", "Static applications"],
+      "links": [
+        {"label": "Try synthetic demo", "url": "https://nilkamal11.github.io/mytradepathway-demo/", "kind": "demo"},
+        {"label": "Public demo code", "url": "https://github.com/nilkamal11/mytradepathway-demo", "kind": "code"}
+      ],
+      "evidence": ["https://github.com/nilkamal11/mytradepathway-demo"]
+    },
+    {
+      "id": "courseframe",
+      "title": "Courseframe curriculum explorer",
+      "categories": ["Tools & prototypes"],
+      "maturity": "Prototype · development paused",
+      "featured": false,
+      "audience": "Curriculum planners and product reviewers",
+      "summary": "A curriculum-pathway prototype for exploring how courses fit together. Retained as a design example while development is paused.",
+      "question": "How could a visual interface help people explore a curriculum and its course relationships?",
+      "contribution": "Developed a curriculum exploration prototype and retained a reviewable preview of the concept.",
+      "approach": "The linked preview presents the prototype. Its inclusion here records an exploratory tool alongside completed analytical work.",
+      "result": "A curriculum explorer preview available for product review.",
+      "limits": "Development is paused. This is a prototype with no claim of institutional adoption, operational use, or measured learning impact.",
+      "skills": ["Product prototyping", "Curriculum visualization"],
+      "links": [
+        {"label": "Open curriculum prototype", "url": "https://curriculum-pathways-preview.nilkamals463352.chatgpt.site", "kind": "demo"}
+      ],
+      "evidence": ["https://curriculum-pathways-preview.nilkamals463352.chatgpt.site"]
+    }
+  ]
+}

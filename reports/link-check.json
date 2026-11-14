@@ -1,0 +1,236 @@
+[
+  {
+    "url": "https://curriculum-pathways-preview.nilkamals463352.chatgpt.site",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:11.128Z"
+  },
+  {
+    "url": "https://doi.org/10.3102/0013189X19864969",
+    "status": 403,
+    "result": "automated-access-limited",
+    "checked_utc": "2026-11-14T14:24:10.485Z"
+  },
+  {
+    "url": "https://github.com/nilkamal11/district-learning-context-explorer",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.722Z"
+  },
+  {
+    "url": "https://github.com/nilkamal11/district-learning-context-explorer/blob/main/docs/finance_extension.md",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.554Z"
+  },
+  {
+    "url": "https://github.com/nilkamal11/doctoral-borrowing",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.561Z"
+  },
+  {
+    "url": "https://github.com/nilkamal11/doctorate-careers",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.591Z"
+  },
+  {
+    "url": "https://github.com/nilkamal11/higher-ed-data-library",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.617Z"
+  },
+  {
+    "url": "https://github.com/nilkamal11/institution-atlas",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.606Z"
+  },
+  {
+    "url": "https://github.com/nilkamal11/k12-data-library",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.595Z"
+  },
+  {
+    "url": "https://github.com/nilkamal11/mytradepathway-demo",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.787Z"
+  },
+  {
+    "url": "https://github.com/nilkamal11/nwea-research-works",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.738Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/district-learning-context-explorer/",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.262Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/district-learning-context-explorer/finance.html",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.264Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/district-learning-context-explorer/illinois.html",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.280Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/doctoral-borrowing/",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.273Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/doctoral-borrowing/brief.pdf",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.277Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/doctoral-borrowing/data/data.json",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.340Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/doctoral-borrowing/data/debt_bins.csv",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.275Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/doctoral-borrowing/data/equity.csv",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.293Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/doctoral-borrowing/data/findings.json",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.291Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/doctoral-borrowing/data/funding.csv",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.342Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/doctorate-careers/",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.355Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/doctorate-careers/brief.pdf",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.260Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/doctorate-careers/data/data.json",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:11.235Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/doctorate-careers/data/field_sector.csv",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.354Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/doctorate-careers/data/findings.json",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.299Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/doctorate-careers/data/salary.csv",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.349Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/doctorate-careers/data/triples.csv",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.266Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/higher-ed-data-library/",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.371Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/higher-ed-data-library/exports/catalog.csv",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.346Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/higher-ed-data-library/exports/catalog.json",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.363Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/higher-ed-data-library/exports/schema.json",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.295Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/institution-atlas/",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.352Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/k12-data-library/",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.283Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/mytradepathway-demo/",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.297Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/nwea-research-works/",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.229Z"
+  },
+  {
+    "url": "https://nilkamal11.github.io/nwea-research-works/python-d3/",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.258Z"
+  },
+  {
+    "url": "https://www.airweb.org/publication/article-148",
+    "status": 200,
+    "result": "reachable",
+    "checked_utc": "2026-11-14T14:24:10.910Z"
+  },
+  {
+    "url": "https://www.linkedin.com/in/nilkamalshah",
+    "status": 999,
+    "result": "automated-access-limited",
+    "checked_utc": "2026-11-14T14:24:10.481Z"
+  }
+]

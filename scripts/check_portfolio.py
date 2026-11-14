@@ -14,7 +14,7 @@ class Page(HTMLParser):
         if tag=='link' and values.get('rel')=='stylesheet':self.assets.append(values['href'])
 page=Page();text=(ROOT/'site/index.html').read_text(encoding='utf-8');page.feed(text)
 assert len(page.ids)==len(set(page.ids)),'Duplicate HTML IDs'
-assert {'k12','higher-ed','publications','approach','borrowing-preview','careers-preview'}<=set(page.ids)
+assert {'k12','higher-ed','publications','approach','studies','projects'}<=set(page.ids)
 for link in page.links:
     assert 'localhost' not in link and '127.0.0.1' not in link and 'C:/' not in link
     if link.startswith('#'):assert link[1:] in page.ids,link
@@ -31,7 +31,8 @@ required=[
 ]
 assert all(link in page.links for link in required),'Missing portfolio resource'
 assert 'September 13, 2026' in text,'Catalog review date omitted'
-assert 'not an estimate of the effect' in text or 'Not fourth-grade spending' in text
+all_text='\n'.join(p.read_text(encoding='utf-8') for p in (ROOT/'site').rglob('*.html'))
+assert 'not fourth-grade spending' in all_text.lower(),'District-finance interpretation boundary omitted'
 assert text.count('<h1>')==1
 print(f'PASS: {len(required)} required resources; {len(page.ids)} unique anchors; all local assets present')
 print('Public destinations:',len({u for u in page.links if urlparse(u).scheme=='https'}))
